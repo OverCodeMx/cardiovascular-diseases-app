@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_marginBottom="2dp"
+    android:layout_height="wrap_content">
+    <android.support.constraint.ConstraintLayout
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:padding="5dp"
+        android:id="@+id/Sintoma14"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:textSize="14sp"
+            android:textColor="@android:color/black"
+            android:id="@+id/tvDetail"
+            android:text="¿Siente algún tipo de presión en el área del pecho?"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvDetail"
+            android:id="@+id/ivLeft"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+
+        <SeekBar
+            app:layout_constraintTop_toTopOf="@+id/ivLeft"
+            app:layout_constraintBottom_toBottomOf="@+id/ivRight"
+            app:layout_constraintLeft_toRightOf="@+id/ivLeft"
+            app:layout_constraintRight_toLeftOf="@+id/ivRight"
+
+            android:id="@+id/rsv_value"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:max="10"/>
+
+        <ImageView
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvDetail"
+            android:id="@+id/ivRight"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+
+    </android.support.constraint.ConstraintLayout>
+</android.support.v7.widget.CardView>
